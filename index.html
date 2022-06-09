@@ -26,24 +26,55 @@
     </p>
     <div class="categories-container">
       <a class="category" href="/info.html">
-        <div id="img-container">
-          <img class="category-image" src="./assets/images/vegetables-category.jpg"
-            alt="Imagem com muitos vegetais: cenoura, repolho, pimentão, alface, cebola">
-        </div>
+        <img
+          id="img-container-1"
+          class="category-image"
+          src="./assets/images/vegetables-category.jpg"
+          data-zoom-image="./assets/images/vegetables-zoom.jpg"
+          alt="Imagem com muitos vegetais: cenoura, repolho, pimentão, alface, cebola">
         <span class="legend">Vegetais</span>
       </a>
       <a class="category" href="/info.html">
-        <img class="category-image" src="./assets/images/meat-category.jpg"
+        <img
+          id="img-container-2"
+          class="category-image"
+          src="./assets/images/meat-category.jpg"
+          data-zoom-image="./assets/images/meat-zoom.jpg"
           alt="Imagem com carnes">
         <span class="legend">Carnes</span>
       </a>
       <a class="category" href="/info.html">
-        <img class="category-image" src="./assets/images/spices-category.jpg"
+        <img
+        id="img-container-3"
+        class="category-image"
+        src="./assets/images/spices-category.jpg"
+        data-zoom-image="./assets/images/spices-zoom.jpg"
         alt="Imagem com temperos">
         <span class="legend">Temperos</span>
       </a>
     </div>
   </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/elevatezoom/3.0.8/jquery.elevatezoom.js"></script>
+  <script>
+    $('#img-container-1').elevateZoom({
+      zoomType : 'lens',
+      lensShape : 'round',
+      lensSize : 150
+    });
+
+    $('#img-container-2').elevateZoom({
+      zoomType : 'lens',
+      lensShape : 'round',
+      lensSize : 150
+    });
+
+    $('#img-container-3').elevateZoom({
+      zoomType : 'lens',
+      lensShape : 'round',
+      lensSize : 150
+    });
+  </script>
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>
@@ -53,14 +84,6 @@
   <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
   <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/js-image-zoom/js-image-zoom.min.js"></script>
-  <script>
-    const options = {
-      width: 308,
-      zoomWidth: 100,
-    };
-    new ImageZoom(document.getElementById('img-container'), options)
   </script>
 </body>
 </html>
