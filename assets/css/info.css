@@ -1,0 +1,69 @@
+.main {
+  padding: 0 10% 5%;
+}
+
+.title {
+  color: #244F10;
+  font-family: 'Lato';
+  font-size: 48px;
+  line-height: 58px;
+  padding-top: 33px;
+  padding-bottom: 63px;
+}
+
+.container-nutritional-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table {
+  border: 2px solid #244F10;
+}
+
+.table-title {
+  background: #244F10;
+  color: #FFAE4F;
+  padding: 20px;
+  font-size: 41px;
+  line-height: 49px;
+  font-family: 'Lato', sans-serif;
+}
+
+.table-row {
+  cursor: pointer;
+}
+
+.table-row:nth-child(even) {
+  background: #FFCE4F;
+}
+
+.table-row:nth-child(odd) {
+  background: #FFAE4F;
+}
+
+.data {
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #244F10;
+  font-family: 'Lato', sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.article {
+  margin-top: 50px;
+  font-family: 'Lato', sans-serif;
+  font-size: 27px;
+  line-height: 46px;
+  color: #000;
+}
+
+.paragraph {
+  margin: 20px 0;
+}
+
+.bold {
+  display: inline-block;
+  width: 100%;
+  font-weight: 600;
+}
